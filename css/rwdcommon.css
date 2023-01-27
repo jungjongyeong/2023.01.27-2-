@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+@media screen and (max-width:1024px) {
+    #header .open {
+        display: block;
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 28px;
+    }
+
+    #header h1 {
+        color: rgba(0, 0, 0, .9);
+        font-size: 36px;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    #header .btn a {
+        display: none;
+        background: #76a34e;
+        color: #fff;
+        padding: 14px 24px;
+        border-radius: 5px;
+        margin-left: 15px;
+    }
+
+    #header #nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transform: translate(0%, 0%);
+        z-index: 9999;
+        width: 100%;
+        background: #fff;
+    }
+    #header #nav.on { display: block;}
+
+    #nav .depth1>li {
+        display: block;
+        font-size: 13px;
+        padding: 18px 0px;
+        position: relative;
+        border-top: 1px solid #dcdcdc;
+    }
+    #nav .depth1>li a {
+        display: block;
+        padding:0px 24px; 
+    }
+    #nav .depth2 {
+        position: static;
+        top: 100%;
+        left: 0;
+        /*  기존 absolute 속성을 취소하려면
+            position:static 으로 수정함
+            static을 쓰면 top, left, right, bottom 의미상실
+         */
+        width: auto;
+        background: #fff;
+        box-shadow: none;
+        margin-top:15px;
+        padding-top:10px;
+        border-top: 1px solid #dcdcdc;
+        display: none;
+    }
+    #nav .depth1>li:hover .depth2 { 
+        display:none;
+    }
+    #nav .depth2 li a {
+        display: block;
+        padding: 10px 24px;
+    }
+    #nav .depth1>li button { display: block; position:absolute; right:16px; top:18px;}
+    #nav .depth1>li .depth2.on  { display: block;}
+
+    
+
+}

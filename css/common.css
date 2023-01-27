@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+button {
+    border: none
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px
+}
+
+#header .open {
+    display: none;
+}
+
+#header {
+    background: #f0f0f1
+}
+
+#header .row {
+    position: relative
+}
+
+#header h1 {
+    color: rgba(0, 0, 0, .9);
+    font-size: 36px;
+    padding: 50px 0
+}
+
+#header #nav {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+    z-index: 9999;
+
+}
+
+#header .btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+#header .btn button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    /* a태그로 버튼을 만들때는 아래 세가지 속성을 추가해야 함 */
+    /* display:inline-block;  */
+    /* text-align:center; */
+    /* line-height:32px;  */
+    background: #d1bc79;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+}
+
+#header .btn a {
+    display: inline-block;
+    background: #76a34e;
+    color: #fff;
+    padding: 14px 24px;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+/* #nav 구역 */
+#nav .depth1>li {
+    display: inline-block;
+    font-size: 13px;
+    padding: 12px 16px;
+    position: relative;
+}
+
+#nav .depth2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 150px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 2px rgb(118 163 78 / 25%);
+    display: none;
+}
+
+#nav .depth1>li:hover .depth2 {
+    display: block
+}
+
+#nav .depth2 li a {
+    display: block;
+    padding: 10px 20px;
+}
+
+#nav .depth2 li:hover a {
+    background: #dcf5c4
+}
+
+#nav .depth1>li button {
+    display: none;
+}
+
+
+/* footer 구역 */
+#footer {
+    color: #938d84;
+    text-align: center;
+    font-size: 13px
+}
+
+#footer .bmenu {
+    background: #5c5040;
+    padding: 15px 0;
+}
+
+#footer .bmenu a {
+    padding: 0 16px
+}
+
+#footer #address {
+    background: #453d32;
+    padding: 24px 0;
+}
+
+#footer #address p {
+    padding: 8px 0;
+}
+
+#footer #address p:last-child span {
+    padding: 0 5px;
+}
+
+#footer #address p:last-child span:first-child a {
+    color: #2271b1;
+}
+
+#footer #address p:last-child span:first-child a:hover {
+    color: #135e96;
+    text-decoration: underline
+}
+
+
+#gotop {
+    position: fixed;
+    right: 30px;
+    bottom: 200px;
+    z-index: 9999999
+}
+
+#gotop a {
+    display: inline-block;
+    width: 32px;
+    height: 34px;
+    border-radius: 50%;
+    background: #d0bc7a;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 34px;
+    font-weight: bold;
+    transition: all 0.4s;
+}
+
+#gotop a:hover {
+    background: #606c1a;
+}
